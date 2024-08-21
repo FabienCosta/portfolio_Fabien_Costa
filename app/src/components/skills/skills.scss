@@ -1,0 +1,17 @@
+.skills {
+  background-color: antiquewhite;
+
+  &_title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  &_talent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+  }
+}
