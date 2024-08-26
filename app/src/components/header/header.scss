@@ -1,7 +1,8 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   position: absolute;
+  text-align: center;
   z-index: 1;
 
   &_title {
