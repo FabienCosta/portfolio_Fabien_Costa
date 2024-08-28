@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "name": "Booki",
+        "description": "This is project 1",
+        "image": "/assets/projects/booki.webp",
+        "url": "#",
+        "icon": "faHtml5",
+        "icon2": "faCss3Alt"
+
+    },
+    {
+        "id": 2,
+        "name": "Oh my food",
+        "description": "This is project 2",
+        "image": "/assets/projects/Oh-my-food.webp",
+        "url": "https://www.google.com",
+        "icon": "faHtml5",
+        "icon2": "faSass"
+    },
+    {
+        "id": 3,
+        "name": "Print-it",
+        "description": "This is project 3",
+        "image": "/assets/projects/Print-it.webp",
+        "url": "https://www.google.com",
+        "icon": "faHtml5",
+        "icon2": "faCss3Alt",
+        "icon3": "faJs"
+    },
+    {
+        "id": 4,
+        "name": "Sophie Bluel",
+        "description": "This is project 4",
+        "image": "/assets/projects/sophie-bluel.webp",
+        "url": "https://www.google.com",
+        "icon": "faHtml5",
+        "icon2": "faCss3Alt",
+        "icon3": "faJs"
+    },
+    {
+        "id": 5,
+        "name": "Kasa",
+        "description": "This is project 5",
+        "image": "/assets/projects/Kasa.webp",
+        "url": "https://www.google.com",
+        "icon": "faReact",
+        "icon2": "faSass"
+    },
+    {
+        "id": 6,
+        "name": "Nina Carducci",
+        "description": "This is project 6",
+        "image": "/assets/projects/Nina Carducci (SEO).webp",
+        "url": "https://www.google.com",
+        "icon": "faHtml5",
+        "icon2": "faCss3Alt",
+        "icon3": "faJs"
+    },
+    {
+        "id": 7,
+        "name": "Flag selector",
+        "description": "This is project 7",
+        "image": "/assets/projects/Flag selector.webp",
+        "url": "https://www.google.com",
+        "icon": "faReact",
+        "icon2": "faCss3Alt"
+    },
+    {
+        "id": 8,
+        "name": "Argent Bank",
+        "description": "This is project 8",
+        "image": "/assets/projects/Argent Bank.webp",
+        "url": "https://www.google.com",
+        "icon": "faReact",
+        "icon2": "faSass",
+        "icon3": "faRedux"
+        
+    }
+]

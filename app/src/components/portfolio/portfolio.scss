@@ -1,4 +1,6 @@
 .portfolio {
+  background-color: whitesmoke;
+  margin: 0% 2% 0% 2%;
   &_title {
     font-size: 2rem;
     text-align: center;
@@ -10,5 +12,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
+
+    @media (max-width: 1260px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 960px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
