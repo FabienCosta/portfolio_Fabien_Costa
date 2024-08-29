@@ -3,7 +3,7 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <footer>
-      <p>© 2024 - All rights reserved</p>
+      <p>© 2024 - Fabien Costa / Portfolio en Open source</p>
     </footer>
   );
 };

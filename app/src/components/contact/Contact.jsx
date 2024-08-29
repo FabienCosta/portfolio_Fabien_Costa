@@ -1,4 +1,10 @@
 import "./contact.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSquareXTwitter,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   return (
@@ -15,18 +21,32 @@ const Contact = () => {
           <h2 className="contact_link_socialNetwork_title">
             Mes réseaux sociaux
           </h2>
-          <a href="https://github.com/yourusername" class="social-icon">
-            <i class="fab fa-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/yourusername"
-            class="social-icon"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://twitter.com/yourusername" class="social-icon">
-            <i class="fab fa-twitter"></i>
-          </a>
+          <div className="contact_link_socialNetwork_icons">
+            <a
+              href="https://github.com/FabienCosta"
+              class="contact_link_socialNetwork_icon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/fabien-costa-/"
+              class="contact_link_socialNetwork_icon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a
+              href="https://x.com/home?lang=fr"
+              class="contact_link_socialNetwork_icon"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={faSquareXTwitter} />
+            </a>
+          </div>
         </div>
       </div>
     </div>
