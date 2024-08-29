@@ -15,4 +15,13 @@
     grid-gap: 1rem;
     padding: 1rem;
   }
+
+  &_logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(7em, 1fr));
+  }
+
+  &_logo {
+    height: 5em;
+  }
 }
