@@ -2,17 +2,29 @@
     {
         "id": 1,
         "name": "Booki",
-        "description": "This is project 1",
+        "description": [
+            "Page d'accueil responsive pour une agence de voyage.",
+            "Conception et intégration de la maquette.",
+            "Intégration du header, formulaire de recherche et sections \"Hébergements\" et \"Activités\".",
+            "Design responsive pour desktop, tablette, et mobile.",
+            "Validation du code avec les standards W3C."
+        ],
         "image": "/assets/projects/booki.webp",
         "url": "#",
         "icon": "faHtml5",
         "icon2": "faCss3Alt"
-
-    },
+    }
+    ,
+    
     {
         "id": 2,
         "name": "Oh my food",
-        "description": "This is project 2",
+        "description": [
+            "Création d'une interface mobile-first pour la startup Oh my food.",
+            "Utilisation de Sass pour le CSS et Git/GitHub pour le versionnage.",
+            "Implémentation d'animations CSS sur les maquettes fournies.",
+            "Rendu de la page d'accueil responsive."
+        ],
         "image": "/assets/projects/Oh-my-food.webp",
         "url": "https://www.google.com",
         "icon": "faHtml5",
@@ -21,8 +33,12 @@
     {
         "id": 3,
         "name": "Print-it",
-        "description": "This is project 3",
-        "image": "/assets/projects/Print-it.webp",
+"description": [
+        "Création d'un carrousel interactif pour un site web d'imprimerie.",
+        "Utilisation de JavaScript pour ajouter des fonctionnalités dynamiques.",
+        "Exploration des fondamentaux de JavaScript (variables, fonctions, boucles).",
+        "Manipulation des éléments HTML avec JavaScript."
+    ],        "image": "/assets/projects/Print-it.webp",
         "url": "https://www.google.com",
         "icon": "faHtml5",
         "icon2": "faCss3Alt",
@@ -31,7 +47,12 @@
     {
         "id": 4,
         "name": "Sophie Bluel",
-        "description": "This is project 4",
+        "description": [
+        "Développement Front-End pour une architecte d'intérieur chez ArchiWebos.",
+        "Création d'une galerie dynamique pour les projets, avec récupération des données via une API et système de filtres.",
+        "Développement de la page de connexion administrateur, incluant l'authentification via un formulaire.",
+        "Ajout d'une modale pour gérer l'ajout et la suppression de projets, avec interaction back-end."
+    ],
         "image": "/assets/projects/sophie-bluel.webp",
         "url": "https://www.google.com",
         "icon": "faHtml5",
@@ -41,7 +62,14 @@
     {
         "id": 5,
         "name": "Kasa",
-        "description": "This is project 5",
+        "description": [
+        "Développement front-end du site web pour l'entreprise Kasa en utilisant React.",
+        "Initialisation du projet avec Create React App.",
+        "Développement des pages de l'application avec React et React Router.",
+        "Gestion des données à partir d'un fichier JSON contenant des annonces immobilières simulées, affichées dynamiquement.",
+        "Mise en place d'un système de routage moderne avec React Router.",
+        "Gestion des erreurs de routage avec une page d'erreur personnalisée pour les pages inexistantes."
+    ],
         "image": "/assets/projects/Kasa.webp",
         "url": "https://www.google.com",
         "icon": "faReact",
@@ -50,7 +78,17 @@
     {
         "id": 6,
         "name": "Nina Carducci",
-        "description": "This is project 6",
+        "description": [
+        "Amélioration de la visibilité et de l'accessibilité du site d'une photographe.",
+        "Analyse du code source et audit initial avec Lighthouse.",
+        "Planification des optimisations : images, code, référencement local, métadonnées pour les réseaux sociaux, et accessibilité.",
+        "Optimisation des performances du site.",
+        "Amélioration du SEO technique pour une note élevée sur Lighthouse.",
+        "Ajout de référencement local avec Schema.org.",
+        "Intégration des métadonnées pour les réseaux sociaux.",
+        "Correction des problèmes d'accessibilité pour une note élevée sur Lighthouse et absence d'erreurs sur Wave.",
+        "Génération des rapports finaux pour performances, accessibilité, et SEO."
+    ],
         "image": "/assets/projects/Nina Carducci (SEO).webp",
         "url": "https://www.google.com",
         "icon": "faHtml5",
@@ -60,7 +98,12 @@
     {
         "id": 7,
         "name": "Flag selector",
-        "description": "This is project 7",
+        "description": [
+        "Développement d'une application web en React pour afficher des informations sur les drapeaux de tous les pays du monde.",
+        "Récupération des données via une API externe, incluant les drapeaux, la population et la capitale des pays.",
+        "Affichage des drapeaux avec les détails associés.",
+        "Mise en place de filtres permettant de trier les pays par population."
+    ],
         "image": "/assets/projects/Flag selector.webp",
         "url": "https://www.google.com",
         "icon": "faReact",
@@ -69,7 +112,12 @@
     {
         "id": 8,
         "name": "Argent Bank",
-        "description": "This is project 8",
+        "description": [
+        "Développement d'une application web dynamique en utilisant React et Redux.",
+        "Création d'une interface réactive avec React et Redux.",
+        "Gestion des utilisateurs : connexion, déconnexion, accès au profil après authentification réussie, et possibilité de modifier le pseudo.",
+        "Documentation des routes de l'API pour la gestion des transactions avec Swagger au format YAML."
+    ],
         "image": "/assets/projects/Argent Bank.webp",
         "url": "https://www.google.com",
         "icon": "faReact",

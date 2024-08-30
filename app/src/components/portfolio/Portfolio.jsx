@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Card from "../card/Card";
+import Modal from "../modal/Modal";
 import {
   faHtml5,
   faCss3Alt,
@@ -20,10 +21,21 @@ const iconMap = {
 
 const Portfolio = () => {
   const [projects, setProjects] = useState([]);
-
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   useEffect(() => {
     setProjects(data);
   }, []);
+
+  const handleCardClick = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
 
   return (
     <div className="portfolio">
@@ -33,14 +45,17 @@ const Portfolio = () => {
           <Card
             key={project.id}
             image={project.image}
-            description={project.description}
+            // description={project.description}
             name={project.name}
             icon={iconMap[project.icon]}
             icon2={iconMap[project.icon2]}
             icon3={iconMap[project.icon3]}
+            onClick={() => handleCardClick(project)}
           />
         ))}
       </div>
+
+      {isModalOpen && <Modal project={selectedProject} onClose={closeModal} />}
     </div>
   );
 };
