@@ -8,11 +8,21 @@ import "./homepage.scss";
 const HomePage = () => {
   return (
     <div className="homepage">
-      <Banner />
-      <About />
-      <Skills />
-      <Portfolio />
-      <Contact />
+      <section id="home">
+        <Banner />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="portfolio">
+        <Portfolio />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 };

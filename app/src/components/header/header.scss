@@ -1,7 +1,9 @@
 .header {
   display: grid;
   grid-template-columns: 1fr;
-  position: absolute;
+  position: fixed; /* Change from absolute to fixed */
+  top: 0; /* Ensure it stays at the top */
+  width: 100%; /* Make sure it spans the full width */
   text-align: center;
   z-index: 1;
 
