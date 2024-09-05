@@ -1,5 +1,7 @@
+@import "src/variables.scss";
+
 .skills {
-  background-color: antiquewhite;
+  background-color: $primary-color;
   z-index: 3;
 
   &_title {

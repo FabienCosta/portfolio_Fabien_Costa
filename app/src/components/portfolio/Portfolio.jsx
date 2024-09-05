@@ -45,7 +45,6 @@ const Portfolio = () => {
           <Card
             key={project.id}
             image={project.image}
-            // description={project.description}
             name={project.name}
             icon={iconMap[project.icon]}
             icon2={iconMap[project.icon2]}
@@ -55,7 +54,13 @@ const Portfolio = () => {
         ))}
       </div>
 
-      {isModalOpen && <Modal project={selectedProject} onClose={closeModal} />}
+      {isModalOpen && (
+        <Modal
+          project={selectedProject}
+          images={selectedProject.images}
+          onClose={closeModal}
+        />
+      )}
     </div>
   );
 };

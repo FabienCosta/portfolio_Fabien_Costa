@@ -71,3 +71,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 images compressées et au format webp
 app entierement en React
 parallax debut sur certains composant
+Palette de Couleurs Inspirée par la Nature
+Vert forêt (#228B22) : Pour les titres et les éléments clés qui doivent se démarquer.
+Beige (#F5F5DC) : Comme couleur de fond principale, pour une base douce et naturelle.
+Blanc cassé (#FAF9F6) : Pour les sections de contenu importantes ou les arrière-plans des cartes de projet.
+Marron clair (#D2B48C) : Pour les boutons, les liens, et les éléments interactifs.
+Vert clair (#98FB98) : Pour les hover states, les bordures légères ou les accents subtils.

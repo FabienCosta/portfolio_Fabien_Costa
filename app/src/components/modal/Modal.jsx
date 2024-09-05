@@ -1,9 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./modal.scss";
 
-const Modal = ({ project, onClose }) => {
+const Modal = ({ project, onClose, images }) => {
   const handleOverlayClick = (e) => {
     if (e.target.classList.contains("modal_overlay")) {
       onClose();
@@ -30,7 +32,14 @@ const Modal = ({ project, onClose }) => {
           ×
         </button>
         <h2>{project.name}</h2>
-        <img className="modal_img" src={project.image} alt={project.name} />
+        <Carousel showArrows={true} showThumbs={false}>
+          {images.map((image, index) => (
+            <div key={index}>
+              <img src={image} alt={`Project ${index + 1}`} />
+            </div>
+          ))}
+        </Carousel>
+        {/* <img className="modal_img" src={project.image} alt={project.name} /> */}
         <div className="modal_description">
           {renderDescription()}
 

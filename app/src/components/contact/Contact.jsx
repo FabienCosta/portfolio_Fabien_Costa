@@ -24,7 +24,7 @@ const Contact = () => {
           <div className="contact_link_socialNetwork_icons">
             <a
               href="https://github.com/FabienCosta"
-              class="contact_link_socialNetwork_icon"
+              className="contact_link_socialNetwork_icon"
               target="_blank"
               rel="noreferrer"
             >
@@ -32,7 +32,7 @@ const Contact = () => {
             </a>
             <a
               href="https://www.linkedin.com/in/fabien-costa-/"
-              class="contact_link_socialNetwork_icon"
+              className="contact_link_socialNetwork_icon"
               target="_blank"
               rel="noreferrer"
             >
@@ -40,7 +40,7 @@ const Contact = () => {
             </a>
             <a
               href="https://x.com/home?lang=fr"
-              class="contact_link_socialNetwork_icon"
+              className="contact_link_socialNetwork_icon"
               target="_blank"
               rel="noreferrer"
             >

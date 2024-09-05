@@ -1,0 +1,15 @@
+// ? Variables for colors
+$primary-color: #f5f5dc;
+$secondary-color: #faf9f6;
+$tertiary-color: #0e380e;
+$quaternary-color: #d2b48c;
+$quinary-color: #98fb98;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $tertiary-color;
+}
