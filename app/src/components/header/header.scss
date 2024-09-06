@@ -87,3 +87,13 @@ a {
   text-decoration: none;
   color: var(--quaternary-color);
 }
+
+@media (max-width: 920px) {
+  .header {
+    display: none; // Cache le header complet
+  }
+
+  .hamburger-menu {
+    display: block; // Affiche le menu hamburger
+  }
+}
