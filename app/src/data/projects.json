@@ -152,6 +152,9 @@
         "Mise en place de filtres permettant de trier les pays par population."
     ],
         "image": "/assets/projects/Flag selector.webp",
+        "images": [
+            "/assets/projects/Flag selector.webp"
+        ],
         "githubUrl": "",
         "url": "https://www.google.com",
         "icon": "faReact",
@@ -167,6 +170,9 @@
         "Documentation des routes de l'API pour la gestion des transactions avec Swagger au format YAML."
     ],
         "image": "/assets/projects/Argent Bank.webp",
+        "images": [
+            "/assets/projects/Argent Bank.webp"
+        ],
         "githubUrl": "https://github.com/FabienCosta/argentBank",
         "url": "https://www.google.com",
         "icon": "faReact",

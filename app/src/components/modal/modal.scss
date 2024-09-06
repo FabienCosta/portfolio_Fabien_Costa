@@ -1,3 +1,5 @@
+@import "src/variables.scss";
+
 .modal_overlay {
   position: fixed;
   top: 0;
@@ -11,7 +13,7 @@
 }
 
 .modal {
-  background: white;
+  background: $primary-color;
   padding: 20px;
   border-radius: 5px;
   max-width: 600px;
@@ -42,12 +44,12 @@
 }
 
 .modal img {
-  width: 100%; /* S'assure que l'image occupe toute la largeur disponible */
-  height: auto; /* Conserve les proportions */
-  max-height: 300px; /* Limite la hauteur maximale de l'image */
-  object-fit: cover; /* Maintient les proportions de l'image */
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
 }
 
 .carousel .slide {
-  max-height: 400px; /* Limite la taille des slides */
+  max-height: 400px;
 }

@@ -39,7 +39,6 @@ const Modal = ({ project, onClose, images }) => {
             </div>
           ))}
         </Carousel>
-        {/* <img className="modal_img" src={project.image} alt={project.name} /> */}
         <div className="modal_description">
           {renderDescription()}
 

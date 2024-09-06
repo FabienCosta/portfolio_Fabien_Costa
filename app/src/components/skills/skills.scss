@@ -1,7 +1,6 @@
 @import "src/variables.scss";
 
 .skills {
-  border: 1px solid red;
   background-color: $primary-color;
   z-index: 3;
 
@@ -13,12 +12,10 @@
   }
 
   &_talent {
-    border: 1px solid blue;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     grid-gap: 1rem;
-    padding: 1rem;
 
     @media screen and (max-width: 960px) {
       grid-template-columns: 1fr;
@@ -27,10 +24,20 @@
 
   &_logos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(7em, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    width: auto;
+    height: 20em;
+    padding: 3% 0% 3% 10%;
   }
 
   &_logo {
-    height: 5em;
+    height: 7em;
+    margin: 0% 0% 0% 3%;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
   }
 }

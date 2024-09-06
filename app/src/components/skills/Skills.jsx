@@ -20,16 +20,16 @@ const Skills = () => {
         <div className="skills_logos">
           <img src={html5Logo} alt="html" className="skills_logo" />
           <img src={cssLogo} alt="css" className="skills_logo" />
-          <img src={sassLogo} alt="sass" className="skills_logo" />
           <img src={jsLogo} alt="javascript" className="skills_logo" />
+          <img src={sassLogo} alt="sass" className="skills_logo" />
           <img src={reactLogo} alt="react" className="skills_logo" />
           <img src={reduxLogo} alt="redux" className="skills_logo" />
         </div>
         <div className="skills_logos">
           <img src={gitHubLogo} alt="github" className="skills_logo" />
           <img src={gitLogo} alt="git" className="skills_logo" />
-          <img src={swaggerLogo} alt="swagger" className="skills_logo" />
           <img src={npmLogo} alt="npm" className="skills_logo" />
+          <img src={swaggerLogo} alt="swagger" className="skills_logo" />
           <img src={postmanLogo} alt="postman" className="skills_logo" />
           <img src={figmaLogo} alt="figma" className="skills_logo" />
         </div>

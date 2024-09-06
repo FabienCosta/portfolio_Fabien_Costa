@@ -1,5 +1,7 @@
+@import "src/variables.scss";
+
 .portfolio {
-  background-color: whitesmoke;
+  background-color: $primary-color;
   margin: 0% 2% 0% 2%;
   &_title {
     font-size: 2rem;
