@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons"; // Importer l'icône du globe
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./modal.scss";
@@ -41,7 +42,6 @@ const Modal = ({ project, onClose, images }) => {
         </Carousel>
         <div className="modal_description">
           {renderDescription()}
-
           <div className="modal_icons">
             {project.githubUrl && (
               <a
@@ -50,6 +50,15 @@ const Modal = ({ project, onClose, images }) => {
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faGithub} />
+              </a>
+            )}
+            {project.websiteUrl && ( // Ajouter le lien vers le site en ligne
+              <a
+                href={project.websiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faGlobe} />
               </a>
             )}
           </div>

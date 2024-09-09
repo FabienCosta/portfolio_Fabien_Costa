@@ -19,6 +19,11 @@ const Header = () => {
     } else {
       setShowHeader(true);
     }
+
+    // Ferme le menu si l'utilisateur fait défiler la page
+    if (showMenu) {
+      setShowMenu(false);
+    }
   };
 
   const toggleMenu = (event) => {
@@ -40,7 +45,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScrollEvent);
       document.removeEventListener("click", handleClickOutside); // Nettoie le gestionnaire d'événements lors du démontage du composant
     };
-  }, []);
+  }, [showMenu]); // Ajoute showMenu comme dépendance pour que l'effet soit réexécuté lorsque showMenu change
 
   return (
     <>

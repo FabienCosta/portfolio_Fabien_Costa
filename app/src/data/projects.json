@@ -41,6 +41,7 @@
             "/assets/projects/ohMyFood/ohMyFood-4.webp"
         ],
         "githubUrl": "https://github.com/FabienCosta/P4-OhMYFOOD",
+        "websiteUrl": "https://fabiencosta.github.io/P4-OhMYFOOD/",
         "url": "https://www.google.com",
         "icon": "faHtml5",
         "icon2": "faSass"
@@ -62,6 +63,7 @@
             "/assets/projects/printIt/printIt-5.webp"
         ],
     "githubUrl": "https://github.com/FabienCosta/Print-it-JS",
+    "websiteUrl": "https://fabiencosta.github.io/Print-it-JS/",
         "url": "https://www.google.com",
         "icon": "faHtml5",
         "icon2": "faCss3Alt",
@@ -110,6 +112,7 @@
             "/assets/projects/kasa/kasa-5.webp"
         ],
         "githubUrl": "https://github.com/FabienCosta/kasa",
+        "websiteUrl": "https://fabiencosta.github.io/kasa",
         "url": "https://www.google.com",
         "icon": "faReact",
         "icon2": "faSass"
@@ -137,6 +140,7 @@
             "/assets/projects/ninaCarducci/ninaCarducci-5.webp"
         ],
         "githubUrl": "https://github.com/FabienCosta/ninacarducci.github.io",
+        "websiteUrl": "https://fabiencosta.github.io/ninacarducci.github.io/",
         "url": "https://www.google.com",
         "icon": "faHtml5",
         "icon2": "faCss3Alt",

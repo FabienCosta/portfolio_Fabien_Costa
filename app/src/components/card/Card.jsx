@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./card.scss";
 
 const Card = ({ name, image, description, icon, icon2, icon3, onClick }) => {
+  const [isActive, setIsActive] = useState(true);
+
+  const handleClick = () => {
+    setIsActive(!isActive);
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
-    <div className="card" onClick={onClick}>
+    <div
+      className={`card ${!isActive ? "card_no_hover" : ""}`}
+      onClick={handleClick}
+    >
       <img src={image} alt="img" className="card_img" />
       <div className="card_content">
         <h3 className="card_title">{name}</h3>

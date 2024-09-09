@@ -4,7 +4,7 @@
   border-radius: 10px;
   align-items: center;
   overflow: hidden;
-
+  box-shadow: 0px 5px 10px grey;
   &:hover {
     transform: scale(1.1);
     transition: all 0.4s ease-out;
@@ -64,4 +64,11 @@
       gap: 0.5em;
     }
   }
+}
+
+.card_no_hover {
+  /* Ajoutez ici les styles pour désactiver l'effet de hover */
+  /* Par exemple : */
+  background-color: initial;
+  /* Ne pas utiliser pointer-events: none; */
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import { Parallax } from "react-scroll-parallax";
 import "./banner.scss";
-import img from "../../assets/img/img.jpg";
-import Fabien from "../../assets/img/Fabien.jpg";
+import img from "../../assets/img/homepage.webp";
+import Fabien from "../../assets/img/Fabien.webp";
 
 const Banner = () => {
   return (
