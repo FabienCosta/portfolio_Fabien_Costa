@@ -32,16 +32,8 @@ const Modal = ({ project, onClose, images }) => {
         <button className="modal_close" onClick={onClose}>
           ×
         </button>
-        <h2>{project.name}</h2>
-        <Carousel showArrows={true} showThumbs={false}>
-          {images.map((image, index) => (
-            <div key={index}>
-              <img src={image} alt={`Project ${index + 1}`} />
-            </div>
-          ))}
-        </Carousel>
-        <div className="modal_description">
-          {renderDescription()}
+        <div className="modal_title">
+          <h2>{project.name}</h2>
           <div className="modal_icons">
             {project.githubUrl && (
               <a
@@ -52,7 +44,7 @@ const Modal = ({ project, onClose, images }) => {
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             )}
-            {project.websiteUrl && ( // Ajouter le lien vers le site en ligne
+            {project.websiteUrl && (
               <a
                 href={project.websiteUrl}
                 target="_blank"
@@ -63,6 +55,14 @@ const Modal = ({ project, onClose, images }) => {
             )}
           </div>
         </div>
+        <Carousel showArrows={true} showThumbs={false}>
+          {images.map((image, index) => (
+            <div key={index}>
+              <img src={image} alt={`Project ${index + 1}`} />
+            </div>
+          ))}
+        </Carousel>
+        <div className="modal_description">{renderDescription()}</div>
       </div>
     </div>
   );

@@ -22,10 +22,28 @@
       grid-template-columns: 1fr;
     }
   }
+
+  &_see-more,
+  &_show-less {
+    text-align: center;
+    margin-top: 1rem;
+    button {
+      background-color: rgb(210, 180, 140, 0.3);
+      color: $tertiary-color;
+      font-size: large;
+      width: 100%;
+      border-radius: 10px;
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
+  }
 }
 
 .modal-img {
-  border: 1px solid red;
   width: 100%;
   height: 60%;
 }

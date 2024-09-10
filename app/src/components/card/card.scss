@@ -9,39 +9,32 @@
     transform: scale(1.1);
     transition: all 0.4s ease-out;
     z-index: 10;
-
     .card_overlay {
       opacity: 1;
     }
   }
-
   &_img {
     width: 100%;
     height: 15em;
     border-radius: 10px;
     object-fit: cover;
   }
-
   &_content {
     padding: 0% 3% 0% 3%;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
   &_title {
     margin: -0% 0% 0% 0%;
     font-size: 1.5em;
   }
-
   &_icons {
     display: flex;
     justify-content: space-around;
   }
-
   &_icon {
     font-size: 3rem;
   }
-
   &_overlay {
     position: absolute;
     top: 0;
@@ -55,7 +48,6 @@
     opacity: 0;
     transition: opacity 0.4s ease-out;
     border-radius: 10px;
-
     .overlay_message {
       color: white;
       font-size: 1.5em;
@@ -67,8 +59,18 @@
 }
 
 .card_no_hover {
-  /* Ajoutez ici les styles pour désactiver l'effet de hover */
-  /* Par exemple : */
   background-color: initial;
-  /* Ne pas utiliser pointer-events: none; */
+}
+
+@media (max-width: 1260px) {
+  .card {
+    &:hover {
+      transform: none;
+      transition: none;
+      z-index: auto;
+      .card_overlay {
+        opacity: 0;
+      }
+    }
+  }
 }

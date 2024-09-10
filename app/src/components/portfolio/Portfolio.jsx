@@ -23,6 +23,8 @@ const Portfolio = () => {
   const [projects, setProjects] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showMore, setShowMore] = useState(false);
+
   useEffect(() => {
     setProjects(data);
   }, []);
@@ -37,11 +39,20 @@ const Portfolio = () => {
     setSelectedProject(null);
   };
 
+  const handleShowMore = () => {
+    setShowMore(true);
+  };
+
+  const handleShowLess = () => {
+    setShowMore(false);
+  };
+
+  const displayedProjects = showMore ? projects : projects.slice(0, 3);
   return (
     <div className="portfolio">
       <h1 className="portfolio_title">Portfolio</h1>
       <div className="portfolio_cards">
-        {projects.map((project) => (
+        {displayedProjects.map((project) => (
           <Card
             key={project.id}
             image={project.image}
@@ -53,7 +64,16 @@ const Portfolio = () => {
           />
         ))}
       </div>
-
+      {!showMore && projects.length > 3 && (
+        <div className="portfolio_see-more">
+          <button onClick={handleShowMore}>voir plus</button>
+        </div>
+      )}
+      {showMore && (
+        <div className="portfolio_show-less">
+          <button onClick={handleShowLess}>voir moins</button>
+        </div>
+      )}
       {isModalOpen && (
         <Modal
           project={selectedProject}

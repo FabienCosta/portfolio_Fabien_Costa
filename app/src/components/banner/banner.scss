@@ -4,6 +4,10 @@
   width: 100%;
   height: 100vh;
 
+  @media screen and (max-width: 768px) {
+    height: 70vh;
+  }
+
   &_img {
     position: absolute;
     top: 50%;
@@ -22,6 +26,10 @@
     color: $quaternary-color;
     font-size: 3rem;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
   &_subtitle {
@@ -32,6 +40,10 @@
     color: $quinary-color;
     font-size: 1.5rem;
     text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
 
   &_photo {
@@ -43,5 +55,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+
+    @media screen and (max-width: 768px) {
+      width: 10em;
+    }
   }
 }

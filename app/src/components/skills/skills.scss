@@ -29,11 +29,20 @@
     width: auto;
     height: 20em;
     padding: 3% 0% 3% 10%;
+
+    @media screen and (max-width: 960px) {
+      grid-template-columns: 1fr 1fr;
+      padding: 0% 0% 0% 20%;
+    }
   }
 
   &_logo {
     height: 7em;
     margin: 0% 0% 0% 3%;
+
+    @media screen and (max-width: 960px) {
+      height: 5em;
+    }
 
     &:hover {
       transform: scale(1.1);
