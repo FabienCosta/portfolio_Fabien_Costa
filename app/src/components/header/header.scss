@@ -32,20 +32,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
+    background-color: rgb(210, 180, 140, 0.2);
   }
 
   &_link {
     list-style: none;
     color: $tertiary-color;
+    font-size: 1.5em;
   }
 }
 
 .hamburger-menu {
+  background-color: $quaternary-color;
+  border-radius: 0px 0px 60px 0px;
+
   position: fixed;
   top: 0;
   left: 0;
   padding: 1rem;
-  background-color: transparent;
   z-index: 1001;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
@@ -61,11 +65,13 @@
 }
 
 .hamburger-button {
-  color: $quaternary-color;
+  color: $tertiary-color;
   font-size: 2rem;
   background: none;
   border: none;
   cursor: pointer;
+  margin-top: -35%;
+  margin-left: -15%;
 }
 
 .hamburger-links {

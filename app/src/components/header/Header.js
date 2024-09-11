@@ -45,6 +45,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScrollEvent);
       document.removeEventListener("click", handleClickOutside); // Nettoie le gestionnaire d'événements lors du démontage du composant
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showMenu]); // Ajoute showMenu comme dépendance pour que l'effet soit réexécuté lorsque showMenu change
 
   return (

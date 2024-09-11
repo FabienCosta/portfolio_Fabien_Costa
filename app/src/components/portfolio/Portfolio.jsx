@@ -24,9 +24,17 @@ const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showMore, setShowMore] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 960);
 
   useEffect(() => {
     setProjects(data);
+
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 960);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const handleCardClick = (project) => {
@@ -47,7 +55,9 @@ const Portfolio = () => {
     setShowMore(false);
   };
 
-  const displayedProjects = showMore ? projects : projects.slice(0, 3);
+  const displayedProjects =
+    showMore || !isMobileView ? projects : projects.slice(0, 3);
+
   return (
     <div className="portfolio">
       <h1 className="portfolio_title">Portfolio</h1>
@@ -64,12 +74,12 @@ const Portfolio = () => {
           />
         ))}
       </div>
-      {!showMore && projects.length > 3 && (
+      {isMobileView && !showMore && projects.length > 3 && (
         <div className="portfolio_see-more">
           <button onClick={handleShowMore}>voir plus</button>
         </div>
       )}
-      {showMore && (
+      {isMobileView && showMore && (
         <div className="portfolio_show-less">
           <button onClick={handleShowLess}>voir moins</button>
         </div>

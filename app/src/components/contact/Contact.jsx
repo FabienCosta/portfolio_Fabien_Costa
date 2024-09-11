@@ -27,24 +27,32 @@ const Contact = () => {
               className="contact_link_socialNetwork_icon"
               target="_blank"
               rel="noreferrer"
+              aria-label="GitHub de Fabien Costa"
             >
               <FontAwesomeIcon icon={faGithub} />
+              <span className="sr-only">GitHub de Fabien Costa</span>
             </a>
             <a
               href="https://www.linkedin.com/in/fabien-costa-/"
               className="contact_link_socialNetwork_icon"
               target="_blank"
               rel="noreferrer"
+              aria-label="Profil LinkedIn de Fabien Costa"
             >
               <FontAwesomeIcon icon={faLinkedin} />
+              <span className="sr-only">Profil LinkedIn de Fabien Costa</span>
             </a>
             <a
               href="https://x.com/home?lang=fr"
               className="contact_link_socialNetwork_icon"
               target="_blank"
               rel="noreferrer"
+              aria-label="Profil X (Twitter) de Fabien Costa"
             >
               <FontAwesomeIcon icon={faSquareXTwitter} />
+              <span className="sr-only">
+                Profil X (Twitter) de Fabien Costa
+              </span>
             </a>
           </div>
         </div>
