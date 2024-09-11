@@ -1,3 +1,5 @@
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import "./contact.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,15 +9,39 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_kvj6qqi", // Remplacez par votre SERVICE_ID
+        "template_yxwmzuj", // Remplacez par votre TEMPLATE_ID
+        form.current,
+        "pTl61awX8vSEiuwuv" // Remplacez par votre USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message envoyé avec succès !");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Erreur lors de l'envoi du message.");
+        }
+      );
+  };
+
   return (
     <div className="contact">
       <h1 className="contact_title">Contact</h1>
       <div className="contact_link">
-        <form className="contact_form">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Send</button>
+        <form ref={form} onSubmit={sendEmail} className="contact_form">
+          <input type="text" name="user_name" placeholder="Nom" required />
+          <input type="email" name="user_email" placeholder="Email" required />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <button type="submit">Envoyer</button>
         </form>
         <div className="contact_link_socialNetwork">
           <h2 className="contact_link_socialNetwork_title">
