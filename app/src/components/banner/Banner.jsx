@@ -12,7 +12,7 @@ const Banner = () => {
         <div className="banner_content">
           <img src={Fabien} alt="Fabien" className="banner_photo" />
           <h1 className="banner_title">Fabien Costa</h1>
-          <p className="banner_subtitle">Front-end developer</p>
+          <p className="banner_subtitle">Développeur Front-end</p>
         </div>
       </div>
     </Parallax>
