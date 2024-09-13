@@ -16,10 +16,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_kvj6qqi", // Remplacez par votre SERVICE_ID
-        "template_yxwmzuj", // Remplacez par votre TEMPLATE_ID
+        "service_kvj6qqi",
+        "template_yxwmzuj",
         form.current,
-        "pTl61awX8vSEiuwuv" // Remplacez par votre USER_ID
+        "pTl61awX8vSEiuwuv"
       )
       .then(
         (result) => {
@@ -38,10 +38,29 @@ const Contact = () => {
       <h1 className="contact_title">Contact</h1>
       <div className="contact_link">
         <form ref={form} onSubmit={sendEmail} className="contact_form">
-          <input type="text" name="user_name" placeholder="Nom" required />
-          <input type="email" name="user_email" placeholder="Email" required />
-          <textarea name="message" placeholder="Message" required></textarea>
-          <button type="submit">Envoyer</button>
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Nom"
+            required
+            className="contact_form_field"
+          />
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Email"
+            required
+            className="contact_form_field"
+          />
+          <textarea
+            name="message"
+            placeholder="Message"
+            required
+            className="contact_form_field"
+          ></textarea>
+          <button type="submit" className="contact_form_button">
+            Envoyer
+          </button>
         </form>
         <div className="contact_link_socialNetwork">
           <h2 className="contact_link_socialNetwork_title">
