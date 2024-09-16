@@ -31,6 +31,10 @@
     @media screen and (max-width: 768px) {
       font-size: 2rem;
     }
+
+    @media screen and (max-width: 452px) {
+      margin: 5% 0% 0% 0%;
+    }
   }
 
   &_subtitle {
@@ -44,6 +48,10 @@
 
     @media screen and (max-width: 768px) {
       font-size: 1rem;
+    }
+
+    @media screen and (max-width: 452px) {
+      margin: 15% 0% 0% 0%;
     }
   }
 

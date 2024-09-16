@@ -55,9 +55,9 @@ const Modal = ({ project, onClose, images }) => {
             )}
           </div>
         </div>
-        <Carousel showArrows={true} showThumbs={false}>
+        <Carousel showArrows={true} showThumbs={false} className="carousel">
           {images.map((image, index) => (
-            <div key={index}>
+            <div key={index} className="carousel_img">
               <img src={image} alt={`Project ${index + 1}`} />
             </div>
           ))}
