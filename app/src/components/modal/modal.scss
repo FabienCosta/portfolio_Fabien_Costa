@@ -49,13 +49,6 @@
   }
 }
 
-.modal img {
-  width: 100%;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
-}
-
-.carousel .slide {
-  max-height: auto;
+.carousel_img > img {
+  height: 15em;
 }

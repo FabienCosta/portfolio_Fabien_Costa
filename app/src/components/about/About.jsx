@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "./about.scss";
 
+// Composant About
 const About = () => {
+  // État pour gérer l'affichage du texte supplémentaire (développement/réduction)
   const [isExpanded, setIsExpanded] = useState(false);
 
+  // Fonction pour basculer l'état d'affichage du texte
   const handleExpand = () => {
-    setIsExpanded(!isExpanded);
+    setIsExpanded(!isExpanded); // Inverse l'état pour montrer ou cacher les détails
   };
 
   return (
@@ -13,6 +16,7 @@ const About = () => {
       <h1 className="about_title">A propos de moi...</h1>
       <div className="about_main">
         <div className="about_main_description">
+          {/* Section de présentation personnelle */}
           <h3 className="about_main_title">Présentation</h3>
           <p className="about_main_text">
             Bonjour, je m'appelle Fabien Costa, développeur front-end spécialisé
@@ -21,6 +25,7 @@ const About = () => {
             approfondir mes compétences en React.
           </p>
 
+          {/* Affiche le contenu additionnel si isExpanded est true */}
           {isExpanded && (
             <>
               <p className="about_main_text">
@@ -45,10 +50,13 @@ const About = () => {
             </>
           )}
 
+          {/* Bouton pour afficher ou réduire le contenu additionnel */}
           <button className="about_main_button" onClick={handleExpand}>
             {isExpanded ? "Réduire" : "En savoir plus"}
           </button>
         </div>
+
+        {/* Section des formations */}
         <div className="about_main_description">
           <h3 className="about_main_title">Formations</h3>
           <p className="about_main_text">

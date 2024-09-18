@@ -1,4 +1,3 @@
-import { ParallaxProvider } from "react-scroll-parallax";
 import "./App.scss";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
@@ -10,9 +9,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <ParallaxProvider>
-          <HomePage />
-        </ParallaxProvider>
+        <HomePage />
         <Footer />
       </BrowserRouter>
     </div>
