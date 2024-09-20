@@ -24,7 +24,7 @@ const Card = ({ name, image, description, icon, icon2, icon3, onClick }) => {
       <img src={image} alt="img" className="card_img" />
 
       <div className="card_content">
-        <h3 className="card_title">{name}</h3>
+        <h2 className="card_title">{name}</h2>
 
         {/* Affichage des icônes si elles sont fournies */}
         <div className="card_icons">

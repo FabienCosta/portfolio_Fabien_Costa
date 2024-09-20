@@ -17,7 +17,7 @@ const About = () => {
       <div className="about_main">
         <div className="about_main_description">
           {/* Section de présentation personnelle */}
-          <h3 className="about_main_title">Présentation</h3>
+          <h2 className="about_main_title">Présentation</h2>
           <p className="about_main_text">
             Bonjour, je m'appelle Fabien Costa, développeur front-end spécialisé
             en JavaScript et React. J'ai suivi deux formations intensives, l'une

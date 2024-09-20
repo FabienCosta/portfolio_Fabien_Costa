@@ -18,7 +18,7 @@
 
     &_description {
       border-radius: 10px;
-      background-color: rgba(216, 190, 156, 0.2);
+      background-color: rgba(216, 190, 156, 0.5); /* Meilleur contraste */
       padding: 20px;
       margin: 20px;
     }
@@ -31,17 +31,25 @@
 
     &_text {
       margin: 20px;
+      color: #333; /* Couleur de texte plus sombre pour un meilleur contraste */
 
       &_link {
-        color: rgb(22, 159, 38);
+        color: rgb(0, 112, 20); /* Couleur de lien avec meilleur contraste */
       }
     }
 
     &_button {
       width: 100%;
-      background-color: rgb(210, 180, 140, 0.1);
-      border: 1px solid rgb(210, 180, 140, 0.2);
-      border-radius: 10px;
+      background-color: rgb(
+        210,
+        180,
+        140,
+        0.3
+      ); /* Meilleur contraste pour le bouton */
+      border: 1px solid rgb(210, 180, 140, 0.5);
+      border-radius: 5px;
+      padding: 1% 0% 1% 0%;
+      font-weight: bold;
     }
   }
 }
