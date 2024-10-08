@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Booki",
+        "category": ["HTML", "CSS"],
         "description": [
             "Page d'accueil responsive pour une agence de voyage.",
             "Conception et intégration de la maquette.",
@@ -28,6 +29,7 @@
     {
         "id": 2,
         "name": "Oh my food",
+        "category": ["HTML", "SASS"],
         "description": [
             "Création d'une interface mobile-first pour la startup Oh my food.",
             "Utilisation de Sass pour le CSS et Git/GitHub pour le versionnage.",
@@ -49,6 +51,7 @@
     {
         "id": 3,
         "name": "Print-it",
+        "category": ["HTML", "CSS", "JAVASCRIPT"],
 "description": [
         "Création d'un carrousel interactif pour un site web d'imprimerie.",
         "Utilisation de JavaScript pour ajouter des fonctionnalités dynamiques.",
@@ -72,6 +75,7 @@
     {
         "id": 4,
         "name": "Sophie Bluel",
+        "category": ["HTML", "CSS", "JAVASCRIPT"],
         "description": [
         "Développement Front-End pour une architecte d'intérieur chez ArchiWebos.",
         "Création d'une galerie dynamique pour les projets, avec récupération des données via une API et système de filtres.",
@@ -95,6 +99,7 @@
     {
         "id": 5,
         "name": "Kasa",
+        "category": ["REACT", "SASS"],
         "description": [
         "Développement front-end du site web pour l'entreprise Kasa en utilisant React.",
         "Initialisation du projet avec Create React App.",
@@ -120,6 +125,7 @@
     {
         "id": 6,
         "name": "Nina Carducci",
+        "category": ["HTML", "CSS", "JAVASCRIPT"],
         "description": [
         "Amélioration de la visibilité et de l'accessibilité du site d'une photographe.",
         "Analyse du code source et audit initial avec Lighthouse.",
@@ -149,6 +155,7 @@
     {
         "id": 7,
         "name": "Flag selector",
+        "category": ["REACT", "CSS"],
         "description": [
         "Développement d'une application web en React pour afficher des informations sur les drapeaux de tous les pays du monde.",
         "Récupération des données via une API externe, incluant les drapeaux, la population et la capitale des pays.",
@@ -167,6 +174,7 @@
     {
         "id": 8,
         "name": "Argent Bank",
+        "category": ["REACT", "SASS"],
         "description": [
         "Développement d'une application web dynamique en utilisant React et Redux.",
         "Création d'une interface réactive avec React et Redux.",

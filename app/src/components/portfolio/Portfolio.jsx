@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "./portfolio.scss";
 import data from "../../data/projects.json";
+import Filter from "../filter/Filter";
 
 // Mapping des icônes pour faciliter leur utilisation plus tard dans le code
 const iconMap = {
@@ -23,6 +24,7 @@ const iconMap = {
 const Portfolio = () => {
   // State pour stocker la liste des projets
   const [projects, setProjects] = useState([]);
+  const [filteredProjects, setFilteredProjects] = useState([]); // State pour les projets filtrés
   // State pour gérer le projet actuellement sélectionné pour affichage dans le modal
   const [selectedProject, setSelectedProject] = useState(null);
   // State pour gérer l'ouverture et la fermeture de la modal
@@ -31,10 +33,13 @@ const Portfolio = () => {
   const [showMore, setShowMore] = useState(false);
   // State pour vérifier si on est en vue mobile (écran de largeur < 960px)
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 960);
+  // State pour la catégorie sélectionnée
+  const [selectedCategory, setSelectedCategory] = useState("Tous"); // État pour la catégorie sélectionnée
 
   // Utilisation du useEffect pour initialiser la liste des projets et écouter les changements de taille de la fenêtre
   useEffect(() => {
     setProjects(data); // Charge les projets depuis le fichier JSON
+    setFilteredProjects(data); // Initialise les projets filtrés
 
     // Fonction de rappel pour mettre à jour la vue mobile en fonction de la taille de la fenêtre
     const handleResize = () => {
@@ -70,11 +75,29 @@ const Portfolio = () => {
 
   // Détermine quels projets sont affichés en fonction de l'état "voir plus" et de la vue mobile
   const displayedProjects =
-    showMore || !isMobileView ? projects : projects.slice(0, 3); // Affiche tous les projets si "voir plus" ou non mobile, sinon affiche les 3 premiers
+    showMore || !isMobileView ? filteredProjects : filteredProjects.slice(0, 3); // Affiche tous les projets si "voir plus" ou non mobile, sinon affiche les 3 premiers
+
+  // Fonction pour gérer le changement de filtre
+  const handleFilterChange = (filter) => {
+    setSelectedCategory(filter); // Met à jour la catégorie sélectionnée
+    if (filter === "Tous") {
+      setFilteredProjects(projects);
+    } else {
+      const filtered = projects.filter(
+        (project) => project.category.includes(filter) // Utilise includes pour vérifier la présence du filtre dans le tableau de catégories
+      );
+      setFilteredProjects(filtered);
+    }
+  };
 
   return (
     <div className="portfolio">
       <h1 className="portfolio_title">Portfolio</h1>
+      <Filter
+        onFilterChange={handleFilterChange}
+        selectedCategory={selectedCategory}
+      />{" "}
+      {/* Passer la fonction de filtre au composant Filter */}
       <div className="portfolio_cards">
         {displayedProjects.map((project) => (
           <Card
@@ -88,16 +111,14 @@ const Portfolio = () => {
           />
         ))}
       </div>
-      {isMobileView && !showMore && projects.length > 3 && (
+      {isMobileView && !showMore && filteredProjects.length > 3 && (
         <div className="portfolio_see-more">
-          <button onClick={handleShowMore}>voir plus</button>{" "}
-          {/* Bouton "voir plus" uniquement si plus de 3 projets */}
+          <button onClick={handleShowMore}>voir plus</button>
         </div>
       )}
       {isMobileView && showMore && (
         <div className="portfolio_show-less">
-          <button onClick={handleShowLess}>voir moins</button>{" "}
-          {/* Bouton "voir moins" si l'utilisateur a cliqué sur "voir plus" */}
+          <button onClick={handleShowLess}>voir moins</button>
         </div>
       )}
       {isModalOpen && (
