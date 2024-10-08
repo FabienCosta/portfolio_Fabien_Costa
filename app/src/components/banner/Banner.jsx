@@ -10,7 +10,12 @@ const Banner = () => {
       <img src={img} alt="nature" className="banner_img" />
 
       <div className="banner_content">
-        <img src={Fabien} alt="Fabien" className="banner_photo" />
+        <img
+          src={Fabien}
+          alt="Fabien"
+          className="banner_photo"
+          loading="lazy"
+        />
 
         <h1 className="banner_title">Fabien Costa</h1>
 
