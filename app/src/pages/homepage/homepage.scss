@@ -8,3 +8,24 @@ h3,
 h4 {
   font-family: "Playwrite CU", sans-serif;
 }
+
+.homepage {
+  position: relative;
+
+  .banner-section {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; // Bannière en arrière-plan
+  }
+
+  .content {
+    position: relative;
+    z-index: 2; // Sections qui passent au-dessus de la bannière
+  }
+
+  section {
+    height: auto; // Chaque section occupe la taille de l'écran
+  }
+}
